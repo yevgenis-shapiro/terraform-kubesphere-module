@@ -3,7 +3,8 @@
 
 
 ## Terraform Module - Kubesphere  | ⭐⭐⭐
-KubeSphere is also a multi-tenant enterprise-grade open-source Kubernetes container platform with full-stack automated IT operation and streamlined DevOps workflows. It provides developer-friendly wizard web UI, helping enterprises to build out a more robust and feature-rich Kubernetes platform, which includes the most common functionalities needed for enterprise Kubernetes strategies.
+KubeSphere is a distributed operating system for cloud-native application management, using Kubernetes as its kernel. It provides a plug-and-play architecture, allowing third-party applications to be seamlessly integrated into its ecosystem. KubeSphere is also a multi-tenant container platform with full-stack automated IT operation and streamlined DevOps workflows. It provides developer-friendly wizard web UI, helping enterprises to build out a more robust and feature-rich platform, which includes most common functionalities needed for enterprise Kubernetes strategy.
+
 
 🚀  Key Features
 ```
