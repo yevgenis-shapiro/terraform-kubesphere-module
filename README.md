@@ -7,17 +7,17 @@ KubeSphere is also a multi-tenant enterprise-grade open-source Kubernetes contai
 
 🚀  Key Features
 ```
-🕸 Provisioning Kubernetes Cluster
-🔗 Kubernetes Multi-cluster Management
-🤖 Kubernetes DevOps
-🔎 Cloud Native Observability
-🧩 Service Mesh (Istio )
-💻 App Store
-💡 Edge Computing Platform
-📊 Metering and Billing
-🗃 Support Multiple Storage and Networking Solutions
-🏘 Multi-tenancy
-🧠 GPU Workloads Scheduling and Monitoring
+✅ Provisioning Kubernetes Cluster
+✅ Kubernetes Multi-cluster Management
+✅ Kubernetes DevOps
+✅ Cloud Native Observability
+✅ Service Mesh (Istio )
+✅ App Store
+✅ Edge Computing Platform
+✅ Metering and Billing
+✅ Support Multiple Storage and Networking Solutions
+✅ Multi-tenancy
+✅ GPU Workloads Scheduling and Monitoring
 ```
 
 
@@ -31,7 +31,11 @@ KubeSphere is also a multi-tenant enterprise-grade open-source Kubernetes contai
 # Google
 # Azure
 # On-Premise
-# 
+# Oracle OCI
+# DigitalOcean
+# Equinix
+# RackSpace
+# SofLayer
 ```
 
 🧩 Config 
