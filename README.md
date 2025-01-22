@@ -1,5 +1,5 @@
+![20200410130334](https://github.com/user-attachments/assets/2e52e7dc-f60d-4679-9e7f-d56ad5f07dee)
 
-![observability](https://github.com/user-attachments/assets/7b023add-858b-4f41-b6fc-0bca08f3afbc)
 
 
 ## Terraform Module - Kubesphere  | ⭐⭐⭐
