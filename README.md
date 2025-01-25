@@ -32,9 +32,12 @@ Will be soon
 # AWS
 # Google
 # Azure
-# On-Premise 
+# On-Premise ( RKE2 , K3S , K0S  ) 
 # Oracle OCI
 # DigitalOcean
+# Equinix
+# RackSpace
+# SofLayer
 ```
 
 🧩 Config 
