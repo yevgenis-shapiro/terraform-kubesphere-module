@@ -18,9 +18,6 @@ resource "helm_release" "metallb" {
   EOF
   ]
 
-  #depends_on = [
-  #  kind_cluster.default
-  #]
 }
 
 resource "null_resource" "wait_for_metallb" {
