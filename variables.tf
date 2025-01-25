@@ -11,21 +11,3 @@ variable "kind_cluster_config_path" {
   default     = "~/.kube/config"
 }
 
-#variable "ingress_nginx_helm_version" {
-#  type        = string
-#  description = "The Helm version for the nginx ingress controller."
-#  default     = "4.0.6"
-#}
-
-#variable "ingress_nginx_namespace" {
-#  type        = string
-#  description = "The nginx ingress namespace (it will be created if needed)."
-#  default     = "ingress-nginx"
-#}
-
-variable "metallb_helm_version" {
-  type        = string
-  description = "The metallb ingress namespace (it will be created if needed)."
-  default     = "0.10.3"
-}
-
