@@ -4,7 +4,7 @@ resource "helm_release" "metallb" {
   repository       = "https://metallb.github.io/metallb"
   chart            = "metallb"
   namespace        = "metallb"
-  version          = "var.metallb_helm_version"
+  version          = "0.10.3"
   create_namespace = true
   timeout = 300
   values = [
