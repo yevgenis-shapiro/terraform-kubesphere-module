@@ -33,6 +33,6 @@ controller:
     enabled: true
 EOT
   ]
-  #depends_on = [kind_cluster.default]
+
 }
 
