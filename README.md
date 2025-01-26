@@ -22,11 +22,6 @@ KubeSphere is a distributed operating system for cloud-native application manage
 ```
 
 
-🎯 Focus :
-```
-Will be soon 
-```
-
 🔨 Integration :
 ```
 # AWS
