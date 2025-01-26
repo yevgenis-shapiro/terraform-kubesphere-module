@@ -14,14 +14,15 @@ provider "helm" {
 
 module "metallb" {
   source = "./modules/metallb"
-  #depends_on = [kind_cluster.default]
+  depends_on = [kind_cluster.default]
+  kind_cluster_config_path = var.kind_cluster_config_path
   #version  = var.metallb_helm_version
-
 }
 
 module "nginx" {
   source = "./modules/nginx"
   #depends_on = [kind_cluster.default]
+  depends_on = [module.metallb]
   #ingress_nginx_helm_version = var.ingress_nginx_helm_version
   #ingress_nginx_namespace    = var.ingress_nginx_namespace
 

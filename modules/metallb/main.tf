@@ -1,22 +1,11 @@
-
 resource "helm_release" "metallb" {
   name             = "metallb"
   repository       = "https://metallb.github.io/metallb"
   chart            = "metallb"
   namespace        = "metallb"
-  version          = "0.10.3"
+  version          = "0.14.4"
   create_namespace = true
   timeout = 300
-  values = [
-    <<-EOF
-  configInline:
-    address-pools:
-    - name: default
-      protocol: layer2
-      addresses:
-      - 172.18.255.1-172.18.255.250
-  EOF
-  ]
 
 }
 

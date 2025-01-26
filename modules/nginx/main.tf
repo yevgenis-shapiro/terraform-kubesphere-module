@@ -28,7 +28,9 @@ controller:
       operator: "Equal"
       effect: "NoSchedule"
   publishService:
-    enabled: true
+    enabled: false
+  extraArgs:
+    publish-status-address: "localhost"
 EOT
   ]
 

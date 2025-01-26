@@ -3,8 +3,8 @@ terraform {
   required_providers {
 
     kind = {
-      source  = "kyma-incubator/kind"
-      version = "0.0.11"
+      source = "tehcyx/kind"
+      version = "0.4.0"
     }
 
     kubernetes = {
@@ -32,7 +32,12 @@ terraform {
       version = "2.0.0"
     }
 
+    external = {
+      source = "hashicorp/external"
+      version = "2.1.0"
+   }
+
  }
 
-  required_version = ">= 0.14.3"
+  required_version = ">= 1.10.0"
 }
