@@ -35,5 +35,32 @@ KubeSphere is a distributed operating system for cloud-native application manage
 🧩 Config 
 
 ```
-
+cc:
+  common:
+    # core: {}
+    redis:
+      enabled: false
+    openldap:
+      enabled: false
+  alerting:
+    enabled: false
+  auditing:
+    enabled: false
+  devops:
+    enabled: false
+  events:
+    enabled: false
+  logging:
+    enabled: false
+  metrics_server:
+    enabled: false
+  monitoring:
+    storageClass: ""
+  openpitrix:
+    store:
+      enabled: false
+  servicemesh:
+    enabled: false
+  kubeedge:
+    enabled: false
 ```
