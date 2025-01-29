@@ -29,3 +29,12 @@ module "nginx" {
 }
 
 
+module "kubesphere" {
+  source = "./modules/kubesphere"
+  depends_on = [module.nginx]
+  #ingress_nginx_helm_version = var.ingress_nginx_helm_version
+  #ingress_nginx_namespace    = var.ingress_nginx_namespace
+
+}
+
+
