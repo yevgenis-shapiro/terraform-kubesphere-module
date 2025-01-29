@@ -8,6 +8,6 @@ resource "helm_release" "ks_installer" {
   create_namespace = true
 
   values = [
-    "${file("./ks-values.yaml")}"
+    "${file("modules/kubesphere/ks-values.yaml")}"
   ]
 }
