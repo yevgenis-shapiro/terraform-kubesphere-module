@@ -19,7 +19,8 @@ controller:
     enabled: true
   terminationGracePeriodSeconds: 0
   service:
-    type: "LoadBalancer"
+    #type: "LoadBalancer"
+    type: "NodePort"
   watchIngressWithoutClass: true
   nodeSelector:
     ingress-ready: "true"
