@@ -27,12 +27,9 @@ KubeSphere is a distributed operating system for cloud-native application manage
 # AWS
 # Google
 # Azure
-# On-Premise ( RKE2 , K3S , K0S  ) 
+# On-Premise 
 # Oracle OCI
 # DigitalOcean
-# Equinix
-# RackSpace
-# SofLayer
 ```
 
 🧩 Config 
