@@ -10,11 +10,11 @@ cc:
   auditing:
     enabled: false
   devops:
-    enabled: false
+    enabled: true
   events:
     enabled: false
   logging:
-    enabled: true
+    enabled: false
   metrics_server:
     enabled: true
   monitoring:
