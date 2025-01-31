@@ -16,8 +16,3 @@ variable "kind_version" {
   type        = string
 }
 
-variable "metallb_ip_range" {
-  description = "The kind version of kubernetes."
-  default     = "172.18.255.1-172.18.255.250"
-  type        = string
-}
