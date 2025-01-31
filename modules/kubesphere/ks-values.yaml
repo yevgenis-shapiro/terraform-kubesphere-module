@@ -14,9 +14,9 @@ cc:
   events:
     enabled: false
   logging:
-    enabled: false
+    enabled: true
   metrics_server:
-    enabled: false
+    enabled: true
   monitoring:
     storageClass: ""
   openpitrix:
