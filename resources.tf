@@ -35,5 +35,3 @@ module "kubesphere" {
   #ingress_nginx_namespace    = var.ingress_nginx_namespace
 
 }
-
-
