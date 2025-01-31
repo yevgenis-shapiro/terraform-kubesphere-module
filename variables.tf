@@ -2,7 +2,7 @@
 
 variable "cluster_name" {
   description = "The kind cluster name."
-  default     = "test-cluster2"
+  default     = "cluster-kubesphere"
   type        = string
 }
 
@@ -14,6 +14,6 @@ variable "kind_cluster_config_path" {
 
 variable "kind_version" {
   description = "The kind version of kubernetes."
-  default     = "v1.32.0"
+  default     = "v1.31.4"
   type        = string
 }
