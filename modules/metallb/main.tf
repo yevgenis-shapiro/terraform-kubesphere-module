@@ -1,10 +1,10 @@
 resource "local_file" "metallb_config" {
-  content = templatefile("${path.module}/modules/metallb/metallb.config.crd.tmpl",
+  content = templatefile("${path.module}/metallb.config.crd.tmpl",
     {
       metallb_ip_range = var.metallb_ip_range
     }
   )
-  filename   = "${path.module}/modules/metallb/metallb.config.crd.yaml"
+  filename   = "${path.module}/metallb.config.crd.yaml"
   depends_on = [helm_release.metallb]
 }
 
@@ -25,7 +25,7 @@ resource "null_resource" "wait_for_metallb" {
 
   provisioner "local-exec" {
     command = <<EOF
-      kubectl apply -f "${path.module}/modules/metallb/metallb.config.crd.yaml"
+      kubectl apply -f "${path.module}/metallb.config.crd.yaml"
       printf "\nWaiting for the metallb controller...\n"
       kubectl wait --namespace ${helm_release.metallb.namespace} \
         --for=condition=ready pod \
