@@ -47,20 +47,20 @@ cc:
   auditing:
     enabled: false
   devops:
-    enabled: false
+    enabled: true
   events:
     enabled: false
   logging:
-    enabled: false
+    enabled: true
   metrics_server:
-    enabled: false
+    enabled: true
   monitoring:
     storageClass: ""
   openpitrix:
     store:
       enabled: false
   servicemesh:
-    enabled: false
+    enabled: true
   kubeedge:
     enabled: false
 ```
