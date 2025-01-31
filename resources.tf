@@ -28,7 +28,6 @@ module "nginx" {
 
 }
 
-
 module "kubesphere" {
   source = "./modules/kubesphere"
   depends_on = [module.nginx]
