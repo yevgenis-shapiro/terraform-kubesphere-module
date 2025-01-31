@@ -1,12 +1,23 @@
+resource "local_file" "metallb_config" {
+  content = templatefile("${path.module}/modules/metallb/metallb.config.crd.tmpl",
+    {
+      metallb_ip_range = var.metallb_ip_range
+    }
+  )
+  filename   = "${path.module}/modules/metallb/metallb.config.crd.yaml"
+  depends_on = [helm_release.metallb]
+}
+
 resource "helm_release" "metallb" {
   name             = "metallb"
   repository       = "https://metallb.github.io/metallb"
   chart            = "metallb"
-  namespace        = "metallb"
-  version          = "0.14.4"
+  namespace        = "metallb-system"
+  version          = "0.14.8"
   create_namespace = true
-  timeout = 300
+  timeout          = 300
 
+  depends_on = [kind_cluster.default]
 }
 
 resource "null_resource" "wait_for_metallb" {
@@ -16,6 +27,7 @@ resource "null_resource" "wait_for_metallb" {
 
   provisioner "local-exec" {
     command = <<EOF
+      kubectl apply -f "${path.module}/modules/metallb/metallb.config.crd.yaml"
       printf "\nWaiting for the metallb controller...\n"
       kubectl wait --namespace ${helm_release.metallb.namespace} \
         --for=condition=ready pod \
@@ -24,5 +36,5 @@ resource "null_resource" "wait_for_metallb" {
     EOF
   }
 
-  depends_on = [helm_release.metallb]
+  depends_on = [helm_release.metallb, local_file.metallb_config]
 }
