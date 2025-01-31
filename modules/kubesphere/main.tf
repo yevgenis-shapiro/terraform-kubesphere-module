@@ -2,8 +2,8 @@ resource "helm_release" "kubesphere" {
   name       = "kubesphere"
   namespace  = "kubesphere-system"
   repository = "https://charts.kubesphere.io/main"
-  chart      = "ks-installer"
-  version    = "0.3.0"
+  chart      = "ks-core"
+  version    = "0.4.0"
   create_namespace = true
 
   values = [
