@@ -19,7 +19,6 @@ module "metallb" {
 
 module "nginx" {
   source = "./modules/nginx"
-  #depends_on = [kind_cluster.default]
   depends_on = [module.metallb]
 }
 
