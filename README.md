@@ -24,12 +24,12 @@ KubeSphere is a distributed operating system for cloud-native application manage
 
 🔨 Integration :
 ```
-# AWS
-# Google
-# Azure
-# On-Premise 
-# Oracle OCI
-# DigitalOcean
+📃 AWS
+📃 Google
+📃 Azure
+📃 On-Premise 
+📃 Oracle OCI
+📃 DigitalOcean
 ```
 
 🧩 Config 
