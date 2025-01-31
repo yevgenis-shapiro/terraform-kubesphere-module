@@ -16,8 +16,6 @@ resource "helm_release" "metallb" {
   version          = "0.14.8"
   create_namespace = true
   timeout          = 300
-
-  depends_on = [kind_cluster.default]
 }
 
 resource "null_resource" "wait_for_metallb" {
